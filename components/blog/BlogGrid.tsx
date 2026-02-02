@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import type { Variants } from 'framer-motion';
 
 const containerVariants = {
   hidden: {},
@@ -16,20 +17,21 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: {
     opacity: 0,
-    y: 40,
+    y: 30,
   },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
-      ease: 'easeOut',
+      duration: 0.5,
+      ease: [0.4, 0, 0.2, 1], 
     },
   },
 };
+
 
 const BlogGrid = () => {
   const ref = useRef(null);
