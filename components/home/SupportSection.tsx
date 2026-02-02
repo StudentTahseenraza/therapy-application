@@ -19,7 +19,7 @@ const SupportSection = () => {
   ];
 
   return (
-    <Section bgColor="transparent" className="py-0">
+    <Section bgColor="none" className="py-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[700px]">
 
         {/* LEFT — IMAGE */}
@@ -99,21 +99,22 @@ const SupportSection = () => {
             "
           >
             <Button
-              href="/contact"
-              variant="ghost"
-              withArrow
-              className="
-                w-full
-                py-6
-                flex
-                justify-center
-                text-text
-                group-hover:text-white
-                transition-colors
-              "
-            >
-              WORK WITH ME
-            </Button>
+  href="/contact"
+  variant="outline"
+  withArrow
+  className="
+    w-full
+    py-6
+    flex
+    justify-center
+    text-text
+    group-hover:text-white
+    transition-colors
+  "
+>
+  WORK WITH ME
+</Button>
+
           </motion.div>
 
         </div>
