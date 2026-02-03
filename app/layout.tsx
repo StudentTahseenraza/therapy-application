@@ -1,27 +1,35 @@
-import type { Metadata } from "next"
-import { Inter, Source_Sans_3 } from "next/font/google"
-import "./globals.css"
+import type { Metadata, Viewport } from "next";
+import { Inter, Source_Sans_3 } from "next/font/google";
+import "./globals.css";
 
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
-import ScrollProgress from "@/components/ScrollProgress"
-// import WeatherWidget from '@/components/WeatherWidget';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ScrollProgress from "@/components/ScrollProgress";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 const sourceSansPro = Source_Sans_3({
-  subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-  variable: '--font-source-sans-pro',
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  variable: "--font-source-sans-pro",
 });
 
+/* ✅ METADATA (NO viewport here) */
 export const metadata: Metadata = {
-  title: 'Dr. Maya Reynolds, PsyD | Therapy for Adults in Santa Monica, CA',
-  description: 'Licensed Clinical Psychologist specializing in anxiety, trauma, and burnout treatment for adults in Santa Monica, California.',
-  keywords: 'therapy, psychologist, Santa Monica, anxiety, trauma, burnout, EMDR, CBT',
+  title: "Dr. Maya Reynolds, PsyD | Therapy for Adults in Santa Monica, CA",
+  description:
+    "Licensed Clinical Psychologist specializing in anxiety, trauma, and burnout treatment for adults in Santa Monica, California.",
+  keywords:
+    "therapy, psychologist, Santa Monica, anxiety, trauma, burnout, EMDR, CBT",
+};
+
+/* ✅ VIEWPORT (THIS CONTROLS RESPONSIVENESS) */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -36,7 +44,6 @@ export default function RootLayout({
         <Header />
         <main className="pt-20">{children}</main>
         <Footer />
-        {/* <WeatherWidget /> */}
       </body>
     </html>
   );

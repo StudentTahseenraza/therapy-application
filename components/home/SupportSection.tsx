@@ -24,20 +24,26 @@ const SupportSection = () => {
 
         {/* LEFT — IMAGE */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="relative bg-[#e7e1d9]"
-        >
-          <Image
-            src="/images/support2.png"
-            alt="Supportive therapy"
-            fill
-            className="object-cover"
-            priority
-          />
-        </motion.div>
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="
+    relative
+    bg-[#e7e1d9]
+    h-[300px] sm:h-[400px]
+    lg:h-auto
+  "
+>
+  <Image
+    src="/images/support2.png"
+    alt="Supportive therapy"
+    fill
+    className="object-cover"
+    priority
+  />
+</motion.div>
+
 
         {/* RIGHT — CONTENT */}
         <div className="bg-[#d9d6e3] flex flex-col justify-between">

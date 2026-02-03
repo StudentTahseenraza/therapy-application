@@ -1,11 +1,14 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const pathname = usePathname();
   const isContact = pathname === '/contact';
+  const [open, setOpen] = useState(false);
 
   return (
     <header
@@ -14,37 +17,72 @@ const Header = () => {
         ${isContact ? 'bg-[#476f95]' : 'bg-white'}
       `}
     >
-      <div className="max-w-7xl mx-auto px-8 h-[88px] flex items-center justify-between">
+      <div className="w-full flex items-center justify-between px-4 h-16 md:h-[88px] max-w-7xl mx-auto">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-heading font-semibold text-primary">
+        <Link
+          href="/"
+          className="text-lg md:text-2xl font-heading font-semibold text-primary"
+          onClick={() => setOpen(false)}
+        >
           Dr. Maya Reynolds
         </Link>
 
-        {/* Navigation */}
-        <nav className=" flex items-center gap-8 text-sm font-medium">
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <Link
             href="/blog"
-            className={`pb-1 ${
+            className={
               pathname === '/blog'
-                ? 'text-2xl border-b border-black text-black'
-                : 'text-muted '
-            }`}
+                ? 'border-b border-black text-black'
+                : 'text-muted'
+            }
           >
             Blog
           </Link>
 
           <Link
             href="/contact"
-            className={`pb-1 ${
+            className={
               pathname === '/contact'
-                ? 'text-2xl border-b border-black text-black'
+                ? 'border-b border-black text-black'
                 : 'text-muted'
-            }`}
+            }
           >
             Contact
           </Link>
         </nav>
+
+        {/* Mobile Toggle */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-text"
+          aria-label="Toggle menu"
+        >
+          {open ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {open && (
+        <div className="md:hidden w-full bg-white border-t">
+          <nav className="flex flex-col items-center py-6 space-y-6 text-lg font-medium">
+            <Link
+              href="/blog"
+              onClick={() => setOpen(false)}
+              className="text-text"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="text-text"
+            >
+              Contact
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
