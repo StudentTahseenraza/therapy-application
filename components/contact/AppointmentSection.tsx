@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 const AppointmentSection = () => {
   return (
     <Section
-      bgColor="custom"
-      className="bg-[#EFE9E2] py-28"
+      bgColor="none"
+      className="bg-[#a3b7ca] py-28"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -30,52 +30,52 @@ const AppointmentSection = () => {
           </p>
         </div>
 
-         {/* Spacer */}
-          <div className="h-10" />
+        {/* Spacer */}
+        <div className="h-10" />
 
-          {/* Widget Container */}
-          <div className="flex justify-center">
-            <div
-              className="bg-white w-full max-w-[560px] px-8 py-10"
-              style={{
-                boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-              }}
-            >
-              {/* Widget Placeholder */}
-              <div className="space-y-6">
-                <div className="text-black font-semibold text-lg">
-                  This page is not active
-                </div>
-
-                <p className="text-sm text-black/70 leading-relaxed">
-                  If you're the owner, please log into your account to start a
-                  free trial or subscribe.
-                </p>
-
-                <button className="border border-black px-6 py-3 text-sm font-medium hover:bg-black hover:text-white transition">
-                  GO TO ACCOUNT
-                </button>
-
-                
+        {/* Widget Container */}
+        <div className="flex justify-center">
+          <div
+            className="bg-white w-full max-w-[560px] px-8 py-10"
+            style={{
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+            }}
+          >
+            {/* Widget Placeholder */}
+            <div className="space-y-6">
+              <div className="text-black font-semibold text-2xl">
+                This page is not active
               </div>
+
+              <p className="text-sm text-black/70 leading-relaxed">
+                If you're the owner, please log into your account to start a
+                free trial or subscribe.
+              </p>
+
+              <button className="border border-black px-6 py-3 text-sm font-medium hover:bg-black hover:text-white transition">
+                GO TO ACCOUNT
+              </button>
+
+
             </div>
           </div>
+        </div>
 
-          {/* Bottom spacing */}
-          <div className="h-10" />
+        {/* Bottom spacing */}
+        <div className="h-10" />
 
         <p className="text-xl text-black pt-10 text-center">
-  <span className="block font-normal">
-    Powered by
-  </span>
-  <span className="block font-bold">
-    acuity:scheduling
-  </span>
-</p>
+          <span className="block font-normal">
+            Powered by
+          </span>
+          <span className="block font-bold">
+            acuity:scheduling
+          </span>
+        </p>
 
 
       </motion.div>
-      
+
     </Section>
   );
 };

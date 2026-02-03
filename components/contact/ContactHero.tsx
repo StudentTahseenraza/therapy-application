@@ -21,11 +21,11 @@ const ContactHero = () => {
             transition={{ duration: 0.7 }}
             className="space-y-10"
           >
-            <h1 className="font-heading text-6xl font-semibold text-[#1F3A1E]">
+            <h1 className="font-heading text-7xl font-semibold text-black">
               Let&apos;s Connect
             </h1>
 
-            <div className="space-y-4 text-lg text-[#1F3A1E] max-w-md">
+            <div className="space-y-4 text-lg text-black max-w-md">
               <p>Starting therapy is courageous.</p>
               <p>
                 Get in touch for questions, or to book a free 15-minute consultation.
@@ -69,7 +69,7 @@ const ContactHero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="bg-[#1F3A1E] text-white p-10 max-w-lg"
+            className="bg-[#8db7d2] text-white p-10 max-w-lg"
           >
             <p className="leading-relaxed text-lg">
               <strong>PLEASE NOTE:</strong> If you opt to use a “Form Block” on your

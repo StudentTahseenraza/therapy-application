@@ -19,7 +19,10 @@ const SubscribeSection = () => {
   };
 
   return (
-    <Section bgColor="olive">
+    <Section 
+    bgColor="none"
+    className='bg-[#1c4e4f]'
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

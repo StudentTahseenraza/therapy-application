@@ -99,21 +99,20 @@ const SupportSection = () => {
             "
           >
             <Button
-  href="/contact"
-  variant="outline"
-  withArrow
-  className="
-    w-full
-    py-6
-    flex
-    justify-center
-    text-text
-    group-hover:text-white
-    transition-colors
-  "
->
-  WORK WITH ME
-</Button>
+              href="/contact"
+              variant="outline"
+              withArrow
+              className="
+                w-full
+                py-6
+                rounded-none
+                flex
+                justify-center
+                text-lg
+              "
+            >
+              WORK WITH ME
+            </Button>
 
           </motion.div>
 

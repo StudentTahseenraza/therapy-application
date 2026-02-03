@@ -45,7 +45,12 @@ const OfficeSection = () => {
   ];
 
   return (
-    <Section bgColor="bg-gray-200" id="office" fullWidth>
+    <Section
+  bgColor="none"
+  className="bg-gray-200"
+  id="office"
+  fullWidth
+>
       <motion.div
         variants={container}
         initial="hidden"

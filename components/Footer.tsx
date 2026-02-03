@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <footer>
       {/* TOP FOOTER — PURE WHITE */}
-      <div className="bg-white text-[#1F2A1E] py-28">
+      <div className="bg-#74a892 text-[#1F2A1E] py-28">
         <div className="max-w-[1400px] mx-auto px-20 flex flex-col md:flex-row justify-between">
 
           {/* LEFT — ADDRESS */}
           <div className="space-y-6 max-w-sm">
-            <h3 className="font-heading text-2xl font-semibold">
+            <h3 className="font-heading text-2xl font-bold">
               Dr. Maya Reynolds, PsyD
             </h3>
 
@@ -68,8 +68,8 @@ const Footer = () => {
       </div>
 
       {/* BOTTOM FOOTER — TEMPLATE COLOR */}
-      <div className="bg-[#EFEAE3] py-12">
-        <div className="max-w-[1400px] mx-auto px-20 text-center space-y-5 text-base font-medium text-[#1F2A1E]">
+      <div className="bg-[#92ba92] py-12">
+        <div className="max-w-[1400px] mx-auto px-20 text-center space-y-5 text-base font-medium text-black">
 
           <div className="flex flex-wrap justify-center gap-8">
             <Link href="/privacy" className="underline">

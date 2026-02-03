@@ -46,25 +46,17 @@ const AboutSection = () => {
 <div className="pt-8 flex justify-center">
   <Button
     href="/contact"
-    withArrow
-    className="
-      rounded-none
-      text-sm
-      px-8 py-3
-
-      bg-secondary
-      text-black
-      border
-      border-black
-
-      hover:bg-primary
-      hover:text-white
-      hover:border-primary
-
-      transition-colors
-      duration-300
-    "
-  >
+              variant="outline"
+              withArrow
+              className="
+                w-half
+                py-4
+                rounded-none
+                flex
+                justify-center
+                text-lg
+              "
+            >
     LET&apos;S CHAT
   </Button>
 </div>

@@ -4,9 +4,10 @@ import Button from '@/components/Button';
 const CTASection = () => {
   return (
     <Section
-      bgColor="transparent"
-      className="bg-[#7A7A4A] text-white py-24"
+      bgColor="none"
+      className="bg-[#1c4e4f] text-white py-24"
     >
+
       <div className="max-w-3xl mx-auto text-center space-y-8">
 
         {/* Heading (same content, template weight) */}
@@ -33,7 +34,7 @@ const CTASection = () => {
               px-10 py-4
               text-sm
               tracking-wide
-              hover:bg-white hover:text-[#7A7A4A]
+              hover:bg-black hover:text-black
               transition-colors
             "
           >

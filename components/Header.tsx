@@ -11,7 +11,7 @@ const Header = () => {
     <header
       className={`
         fixed top-0 left-0 w-full z-50
-        ${isContact ? 'bg-[#C6C6C6]' : 'bg-white'}
+        ${isContact ? 'bg-[#476f95]' : 'bg-white'}
       `}
     >
       <div className="max-w-7xl mx-auto px-8 h-[88px] flex items-center justify-between">

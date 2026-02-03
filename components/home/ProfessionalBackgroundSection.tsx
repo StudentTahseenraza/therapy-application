@@ -11,7 +11,7 @@ const ProfessionalBackgroundSection = () => {
   return (
     /* ✅ DIFFERENT BACKGROUND + TOP SPACE */
     <Section
-      bgColor="transparent"
+      bgColor="none"
       id="background"
       className="bg-[#F3EFE8] py-20 mt-32"
     >

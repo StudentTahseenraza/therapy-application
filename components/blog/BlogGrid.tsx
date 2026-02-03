@@ -27,7 +27,7 @@ const itemVariants: Variants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.4, 0, 0.2, 1], 
+      ease: [0.4, 0, 0.2, 1],
     },
   },
 };
@@ -41,8 +41,14 @@ const BlogGrid = () => {
   });
 
   return (
-    <Section 
-    className="bg-[#FEFFED]" padding="large">
+    <Section
+      bgColor="none"
+      className="bg-[#a49e97]"
+      padding="large"
+      fullWidth
+    >
+
+
       <motion.div
         ref={ref}
         variants={containerVariants}

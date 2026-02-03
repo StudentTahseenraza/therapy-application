@@ -56,25 +56,16 @@ const HeroSection = () => {
 
             <Button
               href="/contact"
+              variant="outline"
               withArrow
               className="
-    rounded-none   /* 🔹 rectangular shape */
-    text-lg
-    px-10 py-4
-    lg:px-12 lg:py-5
-
-    bg-white
-    text-black
-    border
-    border-black
-
-    hover:bg-primary
-    hover:text-white
-    hover:border-primary
-
-    transition-colors
-    duration-300
-  "
+                w-xs
+                py-4
+                rounded-none
+                flex
+                justify-center
+                text-lg
+              "
             >
               CONNECT WITH ME
             </Button>
