@@ -5,7 +5,7 @@ const CTASection = () => {
   return (
     <Section
       bgColor="none"
-      className="bg-[#1c4e4f] text-white py-24"
+      className="bg-[#314026] text-white py-24"
     >
 
       <div className="max-w-3xl mx-auto text-center space-y-8">

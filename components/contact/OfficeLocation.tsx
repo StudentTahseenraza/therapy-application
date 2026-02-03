@@ -6,7 +6,7 @@ const OfficeLocation = () => {
   return (
     <Section
   bgColor="none"
-  className="bg-[#1c4e4f] py-24"
+  className="bg-[#314026] py-24"
 >
   <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 

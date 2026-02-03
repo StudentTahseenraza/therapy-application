@@ -69,7 +69,7 @@ const ContactHero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="bg-[#8db7d2] text-white p-10 max-w-lg"
+            className="bg-[#476f95] text-white p-10 max-w-lg"
           >
             <p className="leading-relaxed text-lg">
               <strong>PLEASE NOTE:</strong> If you opt to use a “Form Block” on your

@@ -21,7 +21,7 @@ const SubscribeSection = () => {
   return (
     <Section 
     bgColor="none"
-    className='bg-[#1c4e4f]'
+    className='bg-[#314026]'
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}

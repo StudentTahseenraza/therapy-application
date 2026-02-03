@@ -29,7 +29,7 @@ const Section = ({
     background: "bg-background",
     olive: "bg-[#8A8650]",
     black: "bg-black",
-    slate: "bg-[#476f95]",
+    slate: "bg-[#d6eadf]",
     none: "",
   };
 
