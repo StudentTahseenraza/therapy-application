@@ -17,11 +17,21 @@ const Header = () => {
         ${isContact ? 'bg-[#476f95]' : 'bg-white'}
       `}
     >
-      <div className="w-full flex items-center justify-between px-4 h-16 md:h-[88px] max-w-7xl mx-auto">
+      {/* Top bar */}
+      <div
+        className="
+          w-full
+          flex items-center justify-between
+          h-16 md:h-[88px]
+          px-0 md:px-8
+          max-w-none md:max-w-7xl
+          md:mx-auto
+        "
+      >
         {/* Logo */}
         <Link
           href="/"
-          className="text-lg md:text-2xl font-heading font-semibold text-primary"
+          className="text-lg md:text-2xl font-heading font-semibold text-primary pl-4 md:pl-0"
           onClick={() => setOpen(false)}
         >
           Dr. Maya Reynolds
@@ -55,7 +65,7 @@ const Header = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-text"
+          className="md:hidden pr-4 text-text"
           aria-label="Toggle menu"
         >
           {open ? <X size={28} /> : <Menu size={28} />}
